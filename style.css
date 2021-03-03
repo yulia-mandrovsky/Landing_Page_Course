@@ -13,6 +13,10 @@ h1 {
     font-size: 55px;
 }
 
+h2 {
+    font-size: 30px;
+}
+
 p {
     font-size: 24px;
 }
@@ -24,6 +28,9 @@ p {
     h1 {
         font-size: 32px;
     }
+    h2 {
+        font-size: 17px;
+    }
   }
 /* Smatphone */
   @media screen and (max-width: 991px){
@@ -33,10 +40,100 @@ p {
     h1 {
         font-size: 26px;
     }
+    h2 {
+        font-size: 14px;
+    }
   }
 
 /* <!-- Pasha --> */
 
 /* <!-- Yulia --> */
+
+.program {
+
+}
+
+.header-program {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.h1-program {
+    padding-left: 121px;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    box-sizing: border-box;
+    width: 399px;
+    height: 328px;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    margin: 41px 37px;
+}
+
+.text_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 12px;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 25px;
+    height: 50%;
+    box-sizing: border-box;
+}
+
+p.text_card {
+    display: block;
+    position: relative;
+    bottom: 30px;
+    position: relative;
+    bottom: 15px;
+    line-height: 130%;
+}
+
+.working-man-container {
+    display: flex;
+    position: relative;
+    bottom: 65px;
+}
+
+.working-man {
+    display: block;
+    position: absolute;
+    right: 67px;
+}
+
+.autors_courses {
+
+}
+
+.autor-1 {
+
+}
+
+.info-block-autor1 {
+
+}
+
+.autor-2 {
+
+}
+
+.info-block-autor2 {
+width: 204.45px;
+height: 191.7px;
+font-size: 10px;
+line-height: 130%;
+}
+
 
 /* <!-- Shamil --> */
