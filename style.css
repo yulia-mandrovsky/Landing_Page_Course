@@ -7,19 +7,23 @@
 
 body {
     font-family: Roboto, sans-serif;
+    box-sizing: border-box;
 }
+
 /* Desktope default */
-h1 {
+
+h2 {
     font-size: 55px;
 }
 
-h2 {
+h3 {
     font-size: 30px;
 }
 
 p {
     font-size: 24px;
 }
+
 /* Tablet */
 @media screen and (min-width: 992px) and (max-width: 1279px){
     p {
@@ -67,17 +71,25 @@ p {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    padding-left: 37px;
 }
 
 .card {
-    box-sizing: border-box;
+    display: block;
+    /* box-sizing: border-box; */
     width: 399px;
     height: 328px;
     background: #FFFFFF;
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
-    margin: 41px 37px;
+    margin-top: 41px;
+    margin-right: 37px;
 }
+
+.card:nth-of-type(3) {
+    margin-right: 0;
+}
+
 
 .text_card {
     display: flex;
@@ -100,10 +112,14 @@ p.text_card {
     line-height: 130%;
 }
 
+.last-card {
+    display: none;
+}
+
 .working-man-container {
     display: flex;
     position: relative;
-    bottom: 65px;
+    bottom: 130px;
 }
 
 .working-man {
@@ -112,28 +128,135 @@ p.text_card {
     right: 67px;
 }
 
-.autors_courses {
+.autors-courses-main {
+    margin-top: 325px;
+    margin-left: 122px;
+    margin-right: 122px;
+}
 
+.autors-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 46px;
+    width: 100%;
+}
+
+.p-info {
+    display: block;
+    font-size: 18px;
+    line-height: 130%;
+}
+
+.autors {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.icon-i-autors-1 {
+    display: block;
+    position: absolute;
+    max-width: 28px;
+    top: 52px;
+    right: 120px;
+}
+
+.icon-i-autors-2 {
+    display: block;
+    position: absolute;
+    max-width: 28px;
+    top: 52px;
+    right: 110px;
 }
 
 .autor-1 {
-
+    display: flex;
+    margin: 0;
 }
 
 .info-block-autor1 {
+    /* display: none; */
+    position: absolute;
+    width: 399px;
+    height: 274px;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 24px;
 
 }
 
 .autor-2 {
-
+    display: flex;
+    margin: 0;
 }
 
 .info-block-autor2 {
-width: 204.45px;
-height: 191.7px;
-font-size: 10px;
-line-height: 130%;
+    /* display: none; */
+    width: 399px;
+    height: 379px;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 24px;
 }
+
+.icon-i-autors-2:hover .info-block-autor2 {
+        display: block;
+        position: absolute;
+        left: 500px;
+    }
+
+
+.described {
+   margin-left: 20px;
+   padding-top: 45px;
+   width: 400px;
+}
+
+.p-info {
+    margin-top: 12px;
+}
+
+/* Clients */
+
+
+.clients-main {
+    background: #EFEFEF;
+    padding-left: 122px;
+    padding-top: 95px;
+    height: 748px;
+}
+
+.client-card {
+    width: 791px;
+    height: 451px;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    margin-bottom: 111px;
+    margin-top: 34px;
+    padding-top: 40px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.text_courses {
+    display: block;
+    margin-top: 40px;
+    margin-left: 45px;
+    margin-right: 45px;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+
 
 
 /* <!-- Shamil --> */
