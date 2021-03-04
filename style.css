@@ -40,3 +40,84 @@ p {
 /* <!-- Yulia --> */
 
 /* <!-- Shamil --> */
+.footer-container {
+    background-color: black; 
+    width: 1157px;
+    height: 390px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 122px;
+    padding-right: 146px;
+    padding-top: 50px;
+}
+
+.footer-left {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo-wrapper {
+    color:rgba(255, 255, 255, 1);
+    /* margin-left:  */
+    /* padding-top:   */
+}
+
+.footer-right {
+    flex-grow: 1;
+    margin-left: 437px;
+    color:rgba(255, 255, 255, 1);
+}
+
+.footer-synchron {
+    color:rgba(255, 255, 255, 1); 
+    font-size: 18px; 
+    padding-top: 185px;
+}
+
+.footer-right p {
+    margin-top: 25px;
+}
+   
+
+.footer-mail {
+    color:rgba(255, 255, 255, 1);
+}
+
+.footer-meseg {
+    display: flex;
+    padding-top: 30px;
+    
+}
+
+.footer-meseg a {
+    display: flex;
+    margin-right: 21px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+    background-color: rgba(157, 201, 200, 1);
+    width: 100%;
+    height: 780px;
+
+}
+.text {
+    color: rgba(0, 0, 0, 1);
+    margin-left: 100px;
+}
+.text-1 {
+    color: rgba(0, 0, 0, 1);
+    margin-left: 550px;
+}
