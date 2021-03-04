@@ -29,10 +29,10 @@ p {
     p {
         font-size: 14px;
     }
-    h1 {
+    h2 {
         font-size: 32px;
     }
-    h2 {
+    h3 {
         font-size: 17px;
     }
   }
@@ -41,10 +41,10 @@ p {
     p {
         font-size: 12px;
     }
-    h1 {
+    h2 {
         font-size: 26px;
     }
-    h2 {
+    h3 {
         font-size: 14px;
     }
   }
@@ -54,29 +54,35 @@ p {
 /* <!-- Yulia --> */
 
 .program {
-
+    justify-content: center;
 }
 
 .header-program {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
 }
 
 .h1-program {
-    padding-left: 121px;
+    margin-left: 121px;
+}
+
+.line {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 30px;
 }
 
 .cards {
-    width: 100%;
+    width: 1272px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-wrap: wrap;
-    padding-left: 37px;
 }
 
 .card {
     display: block;
-    /* box-sizing: border-box; */
     width: 399px;
     height: 328px;
     background: #FFFFFF;
@@ -87,6 +93,10 @@ p {
 }
 
 .card:nth-of-type(3) {
+    margin-right: 0;
+}
+
+.card:nth-of-type(6) {
     margin-right: 0;
 }
 
@@ -120,12 +130,14 @@ p.text_card {
     display: flex;
     position: relative;
     bottom: 130px;
+    right: 70px;
 }
 
 .working-man {
     display: block;
     position: absolute;
     right: 67px;
+    top: 30px;
 }
 
 .autors-courses-main {
@@ -139,7 +151,10 @@ p.text_card {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 46px;
-    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1272px;
+
 }
 
 .p-info {
@@ -196,7 +211,7 @@ p.text_card {
 }
 
 .info-block-autor2 {
-    /* display: none; */
+    display: block;
     width: 399px;
     height: 379px;
     background: #FFFFFF;
@@ -206,12 +221,12 @@ p.text_card {
     padding-right: 25px;
     padding-top: 24px;
 }
-
+/* 
 .icon-i-autors-2:hover .info-block-autor2 {
         display: block;
         position: absolute;
         left: 500px;
-    }
+    } */
 
 
 .described {
@@ -237,6 +252,7 @@ p.text_card {
 .client-card {
     width: 791px;
     height: 451px;
+    box-sizing:border-box;
     background: #FFFFFF;
     box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
@@ -256,7 +272,30 @@ p.text_card {
     line-height: 150%;
 }
 
+.image-name-course {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
 
+.image-woman {
+    width: 190px;
+    height: 169px;
+}
 
+.name-course {
+    display: block;
+    position: relative;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-top: 45px;
+}
+
+.fb-icon-course {
+    display: block;
+    position: absolute;
+    top: 50px;
+
+}
 
 /* <!-- Shamil --> */
