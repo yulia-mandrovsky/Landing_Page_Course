@@ -216,7 +216,7 @@ p.text_card {
 }
 
 .info-block-autor1 {
-    /* display: none; */
+    display: none;
     position: relative;
     top: 45px;
     right: 22px;
@@ -229,7 +229,10 @@ p.text_card {
     padding-left: 25px;
     padding-right: 25px;
     padding-top: 20px;
+}
 
+.icon-i-autors-1:hover + .info-block-autor1 {
+    display: block;
 }
 
 .autor-2 {
@@ -241,7 +244,7 @@ p.text_card {
 }
 
 .info-block-autor2 {
-    display: block;
+    display: none;
     position: absolute;
     bottom: 487px;
     right: 17px;
@@ -256,11 +259,9 @@ p.text_card {
     padding-top: 10px;
 }
 
-.icon-i-autors-2:hover .info-block-autor2 {
+.icon-i-autors-2:hover + .info-block-autor2 {
         display: block;
-        position: absolute;
-        left: 500px;
-    }
+}
 
 
 .described {
