@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600;700&family=Roboto:wght@300;400;700&display=swap');
 
 * {
     margin: 0;
@@ -11,6 +11,11 @@ body {
 }
 
 /* Desktope default */
+
+h1, h2 {
+    font-family: Roboto Slab, sans-serif;
+}
+
 
 h2 {
     font-size: 55px;
@@ -60,17 +65,19 @@ p {
 .header-program {
     display: flex;
     flex-direction: row;
+    margin-bottom: 125px;
 }
 
 .h1-program {
     margin-left: 121px;
+    padding-top: 32px;
 }
 
 .line {
     display: block;
     position: absolute;
     right: 0;
-    top: 30px;
+    top: 65px;
 }
 
 .cards {
@@ -88,7 +95,7 @@ p {
     background: #FFFFFF;
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
-    margin-top: 41px;
+    margin-bottom: 42px;
     margin-right: 37px;
 }
 
@@ -107,8 +114,8 @@ p {
     justify-content: space-between;
     margin-left: 12px;
     margin-top: 10px;
-    padding-left: 20px;
-    padding-bottom: 25px;
+    padding-left: 8px;
+    padding-bottom: 32px;
     height: 50%;
     box-sizing: border-box;
 }
@@ -118,7 +125,7 @@ p.text_card {
     position: relative;
     bottom: 30px;
     position: relative;
-    bottom: 15px;
+    bottom: 20px;
     line-height: 130%;
 }
 
@@ -136,12 +143,12 @@ p.text_card {
 .working-man {
     display: block;
     position: absolute;
-    right: 67px;
-    top: 30px;
+    right: 48px;
+    top: 5px;
 }
 
 .autors-courses-main {
-    margin-top: 325px;
+    margin-top: 275px;
     margin-left: 122px;
     margin-right: 122px;
 }
@@ -150,7 +157,7 @@ p.text_card {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 46px;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
     width: 1272px;
@@ -168,71 +175,102 @@ p.text_card {
     position: relative;
     flex-direction: row;
     justify-content: left;
+    height: 485px;
+}
+
+.photo {
+    width: 180px;
+    height: 166px;
+}
+
+.autors-name {
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 101.38%;
 }
 
 .icon-i-autors-1 {
     display: block;
     position: absolute;
-    max-width: 28px;
-    top: 52px;
-    right: 120px;
+    width: 42px;
+    top: 40px;
+    right: 70px;
 }
 
 .icon-i-autors-2 {
     display: block;
     position: absolute;
-    max-width: 28px;
-    top: 52px;
-    right: 110px;
+    width: 42px;
+    top: 40px;
+    right: 75px;
 }
 
 .autor-1 {
     display: flex;
-    margin: 0;
+    position: relative;
+    top: 30px;
+    left: 35px;
+    margin-bottom: 30px;
 }
 
 .info-block-autor1 {
     /* display: none; */
-    position: absolute;
+    position: relative;
+    top: 45px;
+    right: 22px;
     width: 399px;
     height: 274px;
+    box-sizing: border-box;
     background: #FFFFFF;
     box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
     padding-left: 25px;
     padding-right: 25px;
-    padding-top: 24px;
+    padding-top: 20px;
 
 }
 
 .autor-2 {
     display: flex;
+    position: relative;
+    top: 105px;
+    right: 38px;
     margin: 0;
 }
 
 .info-block-autor2 {
     display: block;
+    position: absolute;
+    bottom: 487px;
+    right: 17px;
     width: 399px;
     height: 379px;
     background: #FFFFFF;
+    box-sizing:border-box;
     box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
     padding-left: 25px;
     padding-right: 25px;
-    padding-top: 24px;
+    padding-top: 10px;
 }
-/* 
+
 .icon-i-autors-2:hover .info-block-autor2 {
         display: block;
         position: absolute;
         left: 500px;
-    } */
+    }
 
 
 .described {
-   margin-left: 20px;
+   margin-left: 25px;
    padding-top: 45px;
    width: 400px;
+}
+
+h3.described {
+    margin-bottom: 0;
 }
 
 .p-info {
@@ -245,8 +283,9 @@ p.text_card {
 .clients-main {
     background: #EFEFEF;
     padding-left: 122px;
-    padding-top: 95px;
-    height: 748px;
+    padding-top: 80px;
+    height: 780px;
+    box-sizing: border-box;
 }
 
 .client-card {
@@ -257,14 +296,15 @@ p.text_card {
     box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
     margin-bottom: 111px;
-    margin-top: 34px;
-    padding-top: 40px;
+    margin-top: 60px;
+    padding-top: 45px;
     padding-left: 45px;
     padding-right: 45px;
 }
 
 .text_courses {
     display: block;
+    font-size: 20px;
     margin-top: 40px;
     margin-left: 45px;
     margin-right: 45px;
@@ -272,13 +312,22 @@ p.text_card {
     line-height: 150%;
 }
 
+.text-courses-card {
+    font-size: 20px;
+    line-height: 30px;
+}
+
 .image-name-course {
     display: flex;
     flex-direction: row;
-    margin-top: 30px;
+    margin-top: 12px;
 }
 
 .image-woman {
+    display: block;
+    position: relative;
+    top: 20px;
+    right: 20px;
     width: 190px;
     height: 169px;
 }
@@ -286,15 +335,21 @@ p.text_card {
 .name-course {
     display: block;
     position: relative;
+    left: -10px;
     flex-direction: column;
-    margin-left: 40px;
-    margin-top: 45px;
+    margin-left: 25px;
+    margin-top: 58px;
+}
+
+.name-clients-course {
+    font-family: Roboto Slab, sans-serif;
 }
 
 .fb-icon-course {
     display: block;
     position: absolute;
-    top: 50px;
+    top: 60px;
+    left: 0;
 
 }
 
