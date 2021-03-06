@@ -43,7 +43,7 @@ p {
 
 .last-block-cont {
     background-color: rgba(157, 201, 200, 1);
-    width: 1425px;
+    width: 100%;
     height: 780px;    
 }
 
@@ -109,19 +109,20 @@ p {
 
 .footer-container {
     background-color: black; 
-    width: 1157px;
+    width: 100%;
     height: 390px;
     display: flex;
     flex-direction: row;
-    padding-left: 122px;
-    padding-right: 146px;
-    padding-top: 50px;
+    
 }
 
 .footer-left {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    padding-left: 122px;
+    padding-right: 146px;
+    padding-top: 50px;
 }
 
 .footer-logo-wrapper {
