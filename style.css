@@ -8,6 +8,7 @@
 body {
     font-family: Roboto, sans-serif;
     box-sizing: border-box;
+    width: 100%;
 }
 
 /* Desktope default */
@@ -873,10 +874,12 @@ h1 {
 
 /* <!-- Yulia --> */
 
+/* ---------------- Block Program ----------------- */
 .program {
     display:flex;
+    width: 100%;
     justify-content: center;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .header-program {
@@ -901,7 +904,9 @@ h1 {
 }
 
 .cards {
-    width: 100.28%;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
     max-width: 1272px;
     margin-left: auto;
     margin-right: auto;
@@ -913,8 +918,8 @@ h1 {
 
 .card {
     display: block;
-    width: 399px;
-    height: 328px;
+    width: 30%;
+    /* height: 328px; */
     background: #FFFFFF;
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
@@ -928,6 +933,10 @@ h1 {
 
 .card:nth-of-type(6) {
     margin-right: 0;
+}
+
+.program-icon {
+    width: 100%;
 }
 
 
@@ -956,6 +965,97 @@ p.text_card {
     display: none;
 }
 
+/*  - -------------------------- MEDIA TABLET-----------------------------------------*/
+
+@media screen and (min-width: 992px) and (max-width: 1279px) {
+    .program {
+        
+    }
+
+    .header-program
+    .h2-program
+    .line
+    .cards
+    .card
+    .text_card
+    p.text_card
+    .last-card 
+}
+
+/*  - -------------------------- MEDIA MOBILE-----------------------------------------*/
+@media screen and (max-width: 991px) {
+    .program {
+        display: flex;
+        text-align: center;
+		width: 100%;
+    }
+    .header-program {
+        width: 100%;   
+        padding-left: 10%;
+        padding-bottom: 10px;
+        margin-bottom: 35px;
+        display: flex;
+        position: relative;
+        flex-wrap: nowrap;
+    }
+
+    .h2-program {
+        font-size: 26px;
+        line-height: 101.38%;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    }
+
+    .line {
+        display: block;
+        width: 30%;
+        position: relative;
+        top: 100px;
+        right: 0;
+    }
+
+    .cards {
+        display: flex;
+		flex-direction: column;
+        flex-wrap: nowrap;
+        text-align: center;
+		width: 100%;  
+        /* margin-right: 40px;   */
+    }
+    .card {
+        width: 80%;
+        /* height: 152.84px; */
+        background: #FFFFFF;
+        box-shadow: 0.465972px 0.465972px 6.98958px rgba(0, 0, 0, 0.25);
+        border-radius: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card:nth-of-type(3) {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .card:nth-of-type(6) {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .program-icon {
+        width: 100%;
+        /* height: 74.56px; */
+    }
+
+    .text_card
+    p.text_card
+    .last-card 
+
+}
+
+/* ---------------------- END "Block Program" -------------------------- */
+
+/* ---------------- Image Working Man ----------------- */
+
 .working-man-container {
     display: flex;
     position: relative;
@@ -968,6 +1068,33 @@ p.text_card {
     left: 980px;
     bottom: 140px;
 }
+
+/*  - -------------------------- MEDIA TABLET-----------------------------------------*/
+@media screen and (min-width: 992px) and (max-width: 1279px) {
+    .working-man-container {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .working-man {
+        display: flex;
+        position: relative;
+        left: 32%;
+        bottom: 65%; 
+        width: 27%;
+    }
+}
+
+/*  - -------------------------- MEDIA MOBILE-----------------------------------------*/
+@media screen and (max-width: 991px) {
+    .working-man-container {
+        display: none;
+    }
+}
+
+/* ------------------- END Image Working Man ----------------- */
+
+/* -------------------- Block Autors --------------------- */
 
 .autors-courses-main {
     margin-top: 50px;
@@ -1011,8 +1138,7 @@ p.text_card {
 }
 
 .photo {
-    width: 180px;
-    height: 166px;
+    width: 15%;
 }
 
 .autors-name {
@@ -1110,14 +1236,290 @@ h3.described {
     margin-top: 12px;
 }
 
-/* Clients */
+/*  - -------------------------- MEDIA TABLET-----------------------------------------*/
+@media screen and (min-width: 992px) and (max-width: 1279px) {
+    .autors-courses-main {
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .header-autors-course {
+        display: block;
+        position: relative;
+        width: 95vw;
+        justify-content: center;
+        padding-left: 120px;
+    }
+    
+    .autors-block {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95vw;
+    
+    }
+    
+    .p-info {
+        display: block;
+        font-size: 18px;
+        line-height: 130%;
+    }
+    
+    .autors {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        justify-content: center;
+        height: 485px;
+    }
+    
+    .photo {
+        width: 180px;
+        height: 166px;
+    }
+    
+    .autors-name {
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 101.38%;
+    }
+    
+    .icon-i-autors-1 {
+        display: block;
+        position: absolute;
+        width: 42px;
+        top: 41px;
+        right: 75px;
+    }
+    
+    .icon-i-autors-2 {
+        display: block;
+        position: absolute;
+        width: 42px;
+        top: 41px;
+        right: 75px;
+    }
+    
+    .autor-1 {
+        display: flex;
+        position: relative;
+        top: 30px;
+        left: 45px;
+        margin-bottom: 30px;
+    }
+    
+    .info-block-autor1 {
+        display: none;
+        position: relative;
+        top: 45px;
+        right: 22px;
+        width: 399px;
+        height: 274px;
+        box-sizing: border-box;
+        background: #FFFFFF;
+        box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.25);
+        border-radius: 30px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 20px;
+    }
+    
+    .icon-i-autors-1:hover + .info-block-autor1 {
+        display: block;
+    }
+    
+    .autor-2 {
+        display: flex;
+        position: relative;
+        top: 105px;
+        left: 30px;
+        margin: 0;
+    }
+    
+    .info-block-autor2 {
+        display: none;
+        position: absolute;
+        bottom: 487px;
+        right: 17px;
+        width: 399px;
+        height: 379px;
+        background: #FFFFFF;
+        box-sizing:border-box;
+        box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.25);
+        border-radius: 30px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 10px;
+    }
+    
+    .icon-i-autors-2:hover + .info-block-autor2 {
+            display: block;
+    }
+    
+    
+    .described {
+       margin-left: 25px;
+       padding-top: 45px;
+       width: 400px;
+    }
+    
+    h3.described {
+        margin-bottom: 0;
+    }
+    
+    .p-info {
+        margin-top: 12px;
+    }
+}
+
+/*  - -------------------------- MEDIA MOBILE-----------------------------------------*/
+@media screen and (max-width: 991px) {
+    .autors-courses-main {
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .header-autors-course {
+        display: block;
+        position: relative;
+        width: 95vw;
+        justify-content: center;
+        padding-left: 120px;
+    }
+    
+    .autors-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95vw;
+    
+    }
+    
+    .p-info {
+        display: block;
+        font-size: 10px;
+        line-height: 130%;
+    }
+    
+    .autors {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        height: 485px;
+    }
+    
+    .photo {
+        width: 35%;
+        display: block;
+        position: relative;
+        left: 0;
+    }
+    
+    .autors-name {
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 101.38%;
+    }
+    
+    .icon-i-autors-1 {
+        display: none;
+    }
+    
+    .icon-i-autors-2 {
+        display: none;
+    }
+    
+    .autor-1 {
+        display: flex;
+        position: relative;
+        top: 30px;
+        left: 45px;
+        margin-bottom: 30px;
+    }
+    
+    .info-block-autor1 {
+        display: block;
+        position: static;
+        justify-content: left;
+        box-sizing: border-box;
+        background: 0;
+        box-shadow: 0 0 0 0;
+        border-radius: 0;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 20px;
+    }
+ 
+    
+    .autor-2 {
+        display: flex;
+        position: relative;
+        top: 105px;
+        left: 30px;
+        margin: 0;
+    }
+    
+    .info-block-autor2 {
+        display: block;
+        position: static;
+        bottom: 487px;
+        right: 17px;
+        width: 399px;
+        height: 379px;
+        background: 0;
+        box-sizing:border-box;
+        box-shadow: 0 0 0;
+        border-radius: 0;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 10px;
+    }
+    
+    .described {
+       margin-left: 25px;
+       padding-top: 45px;
+       width: 400px;
+    }
+    
+    h3.described {
+        margin-bottom: 0;
+    }
+    
+    .p-info {
+        margin-top: 12px;
+    }
+}
+
+/* -------------------- END "Block Autors" --------------------- */
+
+/* -------------------- Clients ------------------------ */
 
 
 .clients-main {
     background: #EFEFEF;
     padding-left: 122px;
     padding-top: 80px;
-    width: 100%;
+    width: 100vw;
     height: 780px;
     box-sizing: border-box;
 }
@@ -1148,7 +1550,7 @@ h3.described {
 
 .text-courses-card {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 150%;
 }
 
 .image-name-course {
@@ -1177,6 +1579,9 @@ h3.described {
 
 .name-clients-course {
     font-family: Roboto Slab, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 101.38%;
 }
 
 .fb-icon-course {
@@ -1184,7 +1589,96 @@ h3.described {
     position: absolute;
     top: 60px;
     left: 0;
+}
+
+/*  - -------------------------- MEDIA TABLET-----------------------------------------*/
+@media screen and (min-width: 992px) and (max-width: 1279px){
 
 }
+
+/*  - -------------------------- MEDIA MOBILE-----------------------------------------*/
+@media screen and (max-width: 991px) {
+    .clients-main {
+        background: #EFEFEF;
+        padding-left: 10%;
+        padding-top: 80px;
+        width: 100vw;
+        box-sizing: border-box;
+    }
+
+    .h2-clients-main {
+        font-size: 14px;
+        line-height: 101.38%;
+    }
+    
+    .client-card {
+        display: flex;
+        flex-direction: column;
+        width: 308px;
+        height: 248px;
+        background: #FFFFFF;
+        box-shadow: 0.465972px 0.465972px 9.31944px rgba(0, 0, 0, 0.25);
+        border-radius: 13.9792px;
+    }
+    
+    .text_courses {
+        display: block;
+        font-size: 20px;
+        /* margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px; */
+        padding-top: 18px;
+        padding-left: 21px;
+        padding-right: 21px;
+
+    }
+    
+    .text-courses-card {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 150%;
+    }
+    
+    .image-name-course {
+        display: flex;
+        flex-direction: row;
+        margin-top: 12px;
+    }
+    
+    .image-woman {
+        display: block;
+        position: relative;
+        top: 120px;
+        right: 20px;
+        width: 88px;
+        height: 80px;
+    }
+    
+    .name-course {
+        display: block;
+        position: relative;
+        left: -10px;
+        flex-direction: column;
+        margin-left: 25px;
+        margin-top: 58px;
+    }
+    
+    .name-clients-course {
+        font-family: Roboto Slab, sans-serif;
+        font-size: 14px;
+        line-height: 101.38%;
+    }
+    
+    .fb-icon-course {
+        display: block;
+        position: relative;
+        top: 80px;
+        left: 50px;
+    }
+
+}
+
+/* -------------------- END "Block Clients" --------------------- */
 
 /* <!-- Shamil --> */
