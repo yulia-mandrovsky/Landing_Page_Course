@@ -874,33 +874,41 @@ h1 {
 /* <!-- Yulia --> */
 
 .program {
+    display:flex;
     justify-content: center;
+    /* overflow: hidden; */
 }
 
 .header-program {
     display: flex;
     flex-direction: row;
     margin-bottom: 125px;
+    padding-left: 100px;
+    overflow: hidden;
 }
 
-.h1-program {
-    margin-left: 121px;
-    padding-top: 32px;
+.h2-program {
+    margin-left: 20px;
+    padding-top: 20px;
 }
 
 .line {
     display: block;
-    position: absolute;
-    right: 0;
-    top: 65px;
+    width: 50vw;
+    position: relative;
+    left: 185px;
+    top: 0px;
 }
 
 .cards {
-    width: 1272px;
+    width: 100.28%;
+    max-width: 1272px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: -10px;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: left;
 }
 
 .card {
@@ -951,31 +959,40 @@ p.text_card {
 .working-man-container {
     display: flex;
     position: relative;
-    bottom: 130px;
-    right: 70px;
+    height: 220px;
 }
 
 .working-man {
     display: block;
-    position: absolute;
-    right: 48px;
-    top: 5px;
+    position: relative;
+    left: 980px;
+    bottom: 140px;
 }
 
 .autors-courses-main {
-    margin-top: 275px;
-    margin-left: 122px;
-    margin-right: 122px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    width: 100%;
+}
+
+.header-autors-course {
+    display: block;
+    position: relative;
+    width: 95vw;
+    justify-content: center;
+    padding-left: 120px;
 }
 
 .autors-block {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
-    width: 1272px;
+    width: 95vw;
 
 }
 
@@ -989,7 +1006,7 @@ p.text_card {
     display: flex;
     position: relative;
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
     height: 485px;
 }
 
@@ -1010,15 +1027,15 @@ p.text_card {
     display: block;
     position: absolute;
     width: 42px;
-    top: 40px;
-    right: 70px;
+    top: 41px;
+    right: 75px;
 }
 
 .icon-i-autors-2 {
     display: block;
     position: absolute;
     width: 42px;
-    top: 40px;
+    top: 41px;
     right: 75px;
 }
 
@@ -1026,7 +1043,7 @@ p.text_card {
     display: flex;
     position: relative;
     top: 30px;
-    left: 35px;
+    left: 45px;
     margin-bottom: 30px;
 }
 
@@ -1054,7 +1071,7 @@ p.text_card {
     display: flex;
     position: relative;
     top: 105px;
-    right: 38px;
+    left: 30px;
     margin: 0;
 }
 
@@ -1100,6 +1117,7 @@ h3.described {
     background: #EFEFEF;
     padding-left: 122px;
     padding-top: 80px;
+    width: 100%;
     height: 780px;
     box-sizing: border-box;
 }
