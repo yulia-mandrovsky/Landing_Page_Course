@@ -1767,11 +1767,8 @@ h3.described {
     }
 
 /*  - -------------------------- MEDIA MOBILE-----------------------------------------*/
-@media(min-width: 320px) and (max-width: 991px) {
+@media screen and (min-width: 320px) and (max-width: 991px) {
 
-    body {
-        background-color: aqua;
-    }
 
     .clients-main {
         display: flex;
