@@ -1007,6 +1007,7 @@ p.text_card {
         display: flex;
         flex-wrap: wrap;
         flex-direction: left;
+        
     }
     
     .card {
@@ -1487,12 +1488,14 @@ h3.described {
         flex-direction: column;
         /* text-align: center; */
         width: 100%;
+        height: auto;
     }
     
     .header-autors-course {
         display: block;
         position: static;
         width: 95vw;
+        height: auto;
         justify-content: left;
         padding-left: 50px;
     }
@@ -1501,10 +1504,11 @@ h3.described {
         display: flex;
         flex-direction: column;
         justify-content: left;
-        margin-top: 3g0px;
+        margin-top: 30px;
         margin-left: auto;
         margin-right: auto;
         width: 95vw;
+        height: auto;
     
     }
     
@@ -1512,11 +1516,13 @@ h3.described {
         display: block;
         font-size: 10px;
         line-height: 130%;
+        height: auto;
     }
     
     .autors {
         display: flex;
         position: static;
+        height: auto;
         flex-direction: column;
         justify-content: left;
     }
@@ -1547,6 +1553,7 @@ h3.described {
         display: flex;
         position: static;
         margin-bottom: 30px;
+        height: auto;
     }
     
     .info-block-autor1 {
@@ -1559,6 +1566,11 @@ h3.described {
         padding-left: 12px;
         padding-right: 12px;
         padding-top: 10px;
+        position: static;
+        top: 45px;
+        right: 22px;
+        width: 100%;
+        height: auto;
     }
  
     
@@ -1570,7 +1582,7 @@ h3.described {
     .info-block-autor2 {
         display: block;
         position: static;
-
+        height: auto;
         background: 0;
         box-sizing:border-box;
         box-shadow: 0 0 0;
