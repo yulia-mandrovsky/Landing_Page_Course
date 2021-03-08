@@ -896,7 +896,8 @@ h1 {
 }
 
 .line {
-    display: block;
+    display: flex;
+    box-sizing:border-box;
     width: 50vw;
     position: relative;
     left: 185px;
@@ -907,7 +908,7 @@ h1 {
     width: 90%;
     padding-left: 5%;
     padding-right: 5%;
-    max-width: 1272px;
+    max-width: 90%;
     margin-left: auto;
     margin-right: auto;
     padding-top: -10px;
@@ -923,8 +924,8 @@ h1 {
     background: #FFFFFF;
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
-    margin-bottom: 42px;
-    margin-right: 37px;
+    margin-bottom: 23px;
+    margin-right: 21px;
 }
 
 .card:nth-of-type(3) {
@@ -961,25 +962,97 @@ p.text_card {
     line-height: 130%;
 }
 
-.last-card {
-    display: none;
-}
-
 /*  - -------------------------- MEDIA TABLET-----------------------------------------*/
 
 @media screen and (min-width: 992px) and (max-width: 1279px) {
     .program {
-        
+        display:flex;
+        width: 100%;
+        max-width: 1279px;
+        justify-content: center;
+        text-align: center;
+        overflow: hidden;
+    }
+    
+    .header-program {
+        display: flex;
+        flex-direction: row;
+        height: 70px;
+        margin-bottom: 50px;
+        padding-left: 60px;
+        overflow: hidden;
+    }
+    
+    .h2-program {
+        font-size: 32px;
+        line-height: 101.38%;
+    }
+    
+    .line {
+        display: flex;
+        box-sizing:border-box;
+        width: 50vw;
+        position: relative;
+        left: 100px;
+        top: 5px;
+    }
+    
+    .cards {
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: -10px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: left;
+    }
+    
+    .card {
+        width: 231.09px;
+        height: 189.97px;
+        background: #FFFFFF;
+        box-shadow: 0.579167px 0.579167px 8.6875px rgba(0, 0, 0, 0.25);
+        margin-bottom: 23px;
+        margin-right: 21px;
+    }
+    
+    .card:nth-of-type(3) {
+        margin-right: 0;
+    }
+    
+    .card:nth-of-type(6) {
+        margin-right: 0;
+    }
+    
+    h3.text_card {
+        font-size: 17px;
+        line-height: 130%;
     }
 
-    .header-program
-    .h2-program
-    .line
-    .cards
-    .card
-    .text_card
-    p.text_card
-    .last-card 
+    p.text_card {
+        font-size: 14px;
+        line-height: 130%;
+    }
+
+    .program-icon {
+        width: 231.09px;
+        height: 92.67px;
+    }
+    
+    
+    .text_card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 12px;
+        margin-top: 10px;
+        padding-left: 5px;
+        padding-bottom: 25px;
+        height: 50%;
+        box-sizing: border-box;
+    }
 }
 
 /*  - -------------------------- MEDIA MOBILE-----------------------------------------*/
@@ -987,12 +1060,14 @@ p.text_card {
     .program {
         display: flex;
         text-align: center;
+        justify-content: center;
 		width: 100%;
     }
     .header-program {
         width: 100%;   
         padding-left: 10%;
         padding-bottom: 10px;
+        box-sizing: border-box;
         margin-bottom: 35px;
         display: flex;
         position: relative;
@@ -1018,7 +1093,9 @@ p.text_card {
 		flex-direction: column;
         flex-wrap: nowrap;
         text-align: center;
+        justify-content: center;
 		width: 100%;  
+        box-sizing: border-box;
         /* margin-right: 40px;   */
     }
     .card {
@@ -1046,9 +1123,15 @@ p.text_card {
         /* height: 74.56px; */
     }
 
-    .text_card
-    p.text_card
-    .last-card 
+    .text_card {
+
+    }
+    p.text_card{
+
+    }
+    .last-card {
+
+    }
 
 }
 
@@ -1059,12 +1142,12 @@ p.text_card {
 .working-man-container {
     display: flex;
     position: relative;
-    height: 220px;
 }
 
 .working-man {
-    display: block;
+    display: flex;
     position: relative;
+    width: 20%;
     left: 980px;
     bottom: 140px;
 }
@@ -1073,15 +1156,16 @@ p.text_card {
 @media screen and (min-width: 992px) and (max-width: 1279px) {
     .working-man-container {
         display: flex;
-        justify-content: center;
+        position: relative;
     }
     
     .working-man {
-        display: flex;
+        display: block;
         position: relative;
-        left: 32%;
-        bottom: 65%; 
-        width: 27%;
+        width: 20%;
+        right: 15%;
+        bottom: 140px;
+        left: 60%;
     }
 }
 
@@ -1100,6 +1184,7 @@ p.text_card {
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
     justify-content: center;
     width: 100%;
 }
@@ -1108,6 +1193,7 @@ p.text_card {
     display: block;
     position: relative;
     width: 95vw;
+    box-sizing: border-box;
     justify-content: center;
     padding-left: 120px;
 }
@@ -1138,7 +1224,8 @@ p.text_card {
 }
 
 .photo {
-    width: 15%;
+    width: 15vw;
+    height: 15vw;
 }
 
 .autors-name {
@@ -1239,7 +1326,7 @@ h3.described {
 /*  - -------------------------- MEDIA TABLET-----------------------------------------*/
 @media screen and (min-width: 992px) and (max-width: 1279px) {
     .autors-courses-main {
-        margin-top: 50px;
+        margin-top: 30px;
         margin-left: auto;
         margin-right: auto;
         justify-content: center;
@@ -1251,7 +1338,17 @@ h3.described {
         position: relative;
         width: 95vw;
         justify-content: center;
-        padding-left: 120px;
+        padding-left: 60px;
+    }
+
+    h2.autors-courses-main {
+        font-size: 32px;
+        line-height: 101.38%;
+    }
+
+    h3.autors-courses-main {
+        font-size: 17px;
+        line-height: 101.38%;
     }
     
     .autors-block {
@@ -1261,13 +1358,22 @@ h3.described {
         margin-top: 50px;
         margin-left: auto;
         margin-right: auto;
-        width: 95vw;
+        width: 90%;
     
+    }
+
+     
+    .described {
+        display: flex;
+        position: relative;
+        margin-left: 25px;
+        padding-top: 45px;
+        /* width: 400px; */
     }
     
     .p-info {
         display: block;
-        font-size: 18px;
+        font-size: 10px;
         line-height: 130%;
     }
     
@@ -1276,60 +1382,60 @@ h3.described {
         position: relative;
         flex-direction: row;
         justify-content: center;
-        height: 485px;
+        height: 460px;
     }
     
     .photo {
-        width: 180px;
-        height: 166px;
+        width: 109px;
+        height: 103px;
     }
     
     .autors-name {
         font-family: Roboto Slab;
         font-style: normal;
         font-weight: bold;
-        font-size: 30px;
+        font-size: 17px;
         line-height: 101.38%;
     }
     
     .icon-i-autors-1 {
         display: block;
-        position: absolute;
-        width: 42px;
-        top: 41px;
-        right: 75px;
+        position: relative;
+        width: 16.5px;
+        top: 70%;
+        right: 600px;
     }
     
     .icon-i-autors-2 {
         display: block;
         position: absolute;
-        width: 42px;
-        top: 41px;
+        width: 16.5px;
+        top: 0px;
         right: 75px;
     }
     
     .autor-1 {
         display: flex;
         position: relative;
-        top: 30px;
+        top: 20px;
         left: 45px;
         margin-bottom: 30px;
     }
     
     .info-block-autor1 {
-        display: none;
+        display: block;
         position: relative;
-        top: 45px;
-        right: 22px;
-        width: 399px;
-        height: 274px;
+        top: 25px;
+        right: 35px;
         box-sizing: border-box;
-        background: #FFFFFF;
-        box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.25);
-        border-radius: 30px;
         padding-left: 25px;
-        padding-right: 25px;
-        padding-top: 20px;
+        padding-right: 11px;
+        padding-top: 8px;
+        width: 231.09px;
+        height: 158.69px;
+        background: #FFFFFF;
+        box-shadow: 0.579167px 0.579167px 11.5833px rgba(0, 0, 0, 0.25);
+        border-radius: 17.375px;
     }
     
     .icon-i-autors-1:hover + .info-block-autor1 {
@@ -1339,37 +1445,32 @@ h3.described {
     .autor-2 {
         display: flex;
         position: relative;
-        top: 105px;
+        top: 95px;
         left: 30px;
         margin: 0;
     }
     
     .info-block-autor2 {
-        display: none;
+        display: block;
         position: absolute;
         bottom: 487px;
         right: 17px;
-        width: 399px;
-        height: 379px;
-        background: #FFFFFF;
         box-sizing:border-box;
-        box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.25);
-        border-radius: 30px;
         padding-left: 25px;
         padding-right: 25px;
-        padding-top: 10px;
+        padding-top: 5px;
+        width: 231.09px;
+        height: 219.5px;
+        background: #FFFFFF;
+        box-shadow: 0.579167px 0.579167px 11.5833px rgba(0, 0, 0, 0.25);
+        border-radius: 17.375px;
     }
     
     .icon-i-autors-2:hover + .info-block-autor2 {
             display: block;
     }
     
-    
-    .described {
-       margin-left: 25px;
-       padding-top: 45px;
-       width: 400px;
-    }
+   
     
     h3.described {
         margin-bottom: 0;
@@ -1377,6 +1478,8 @@ h3.described {
     
     .p-info {
         margin-top: 12px;
+        font-size: 10px;
+        line-height: 130%;
     }
 }
 
@@ -1427,7 +1530,9 @@ h3.described {
     }
     
     .photo {
-        width: 35%;
+        /* width: 35vw;
+        height: 35vw; */
+
         display: block;
         position: relative;
         left: 0;
@@ -1459,15 +1564,15 @@ h3.described {
     
     .info-block-autor1 {
         display: block;
-        position: static;
+        position: relative;
         justify-content: left;
         box-sizing: border-box;
         background: 0;
         box-shadow: 0 0 0 0;
         border-radius: 0;
-        padding-left: 25px;
-        padding-right: 25px;
-        padding-top: 20px;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 10px;
     }
  
     
@@ -1481,17 +1586,17 @@ h3.described {
     
     .info-block-autor2 {
         display: block;
-        position: static;
+        position: relative;
         bottom: 487px;
-        right: 17px;
+        right: 170px;
         width: 399px;
         height: 379px;
         background: 0;
         box-sizing:border-box;
         box-shadow: 0 0 0;
         border-radius: 0;
-        padding-left: 25px;
-        padding-right: 25px;
+        padding-left: 12px;
+        padding-right: 12px;
         padding-top: 10px;
     }
     
@@ -1518,8 +1623,9 @@ h3.described {
 .clients-main {
     background: #EFEFEF;
     padding-left: 122px;
-    padding-top: 80px;
+    padding-top: 58px;
     width: 100vw;
+    width: 834px;
     height: 780px;
     box-sizing: border-box;
 }
@@ -1527,25 +1633,19 @@ h3.described {
 .client-card {
     width: 791px;
     height: 451px;
-    box-sizing:border-box;
-    background: #FFFFFF;
-    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.25);
-    border-radius: 30px;
+    box-sizing: border-box;
     margin-bottom: 111px;
     margin-top: 60px;
-    padding-top: 45px;
-    padding-left: 45px;
-    padding-right: 45px;
+    padding-top: 43px;
+    padding-left: 46px;
+    padding-right: 46px;
+    background: #FFFFFF;
+    box-shadow: 0.579167px 0.579167px 11.5833px rgba(0, 0, 0, 0.25);
+    border-radius: 17.375px;
 }
 
 .text_courses {
     display: block;
-    font-size: 20px;
-    margin-top: 40px;
-    margin-left: 45px;
-    margin-right: 45px;
-    font-size: 20px;
-    line-height: 150%;
 }
 
 .text-courses-card {
@@ -1594,49 +1694,35 @@ h3.described {
 /*  - -------------------------- MEDIA TABLET-----------------------------------------*/
 @media screen and (min-width: 992px) and (max-width: 1279px){
 
-}
-
-/*  - -------------------------- MEDIA MOBILE-----------------------------------------*/
-@media screen and (max-width: 991px) {
     .clients-main {
         background: #EFEFEF;
-        padding-left: 10%;
-        padding-top: 80px;
+        padding-left: 71px;
+        padding-top: 40px;
         width: 100vw;
+        height: 452px;
         box-sizing: border-box;
-    }
-
-    .h2-clients-main {
-        font-size: 14px;
-        line-height: 101.38%;
     }
     
     .client-card {
-        display: flex;
-        flex-direction: column;
-        width: 308px;
-        height: 248px;
+        width: 458.12px;
+        height: 261.2px;
+        box-sizing: border-box;
+        margin-bottom: 111px;
+        margin-top: 30px;
+        padding-top: 23px;
+        padding-left: 26px;
+        padding-right: 26px;
         background: #FFFFFF;
-        box-shadow: 0.465972px 0.465972px 9.31944px rgba(0, 0, 0, 0.25);
-        border-radius: 13.9792px;
+        box-shadow: 0.579167px 0.579167px 11.5833px rgba(0, 0, 0, 0.25);
+        border-radius: 17.375px;
     }
     
     .text_courses {
         display: block;
-        font-size: 20px;
-        /* margin-top: 20px;
-        margin-left: 20px;
-        margin-right: 20px; */
-        padding-top: 18px;
-        padding-left: 21px;
-        padding-right: 21px;
-
     }
     
     .text-courses-card {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 10px;
+        font-size: 12px;
         line-height: 150%;
     }
     
@@ -1649,10 +1735,105 @@ h3.described {
     .image-woman {
         display: block;
         position: relative;
-        top: 120px;
-        right: 20px;
-        width: 88px;
-        height: 80px;
+        top: 5px;
+        right: 10px;
+        width: 110.04px;
+        height: 97.88px;
+    }
+    
+    .name-course {
+        display: block;
+        position: relative;
+        left: -10px;
+        flex-direction: column;
+        margin-left: 25px;
+        margin-top: 50px;
+    }
+    
+    .name-clients-course {
+        font-family: Roboto Slab, sans-serif;
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 101.38%
+    }
+    
+    .fb-icon-course {
+        display: block;
+        width: 18.53px;
+        height: 17.95px;
+        position: absolute;
+        top: 25px;
+        left: 0;
+    }
+
+/*  - -------------------------- MEDIA MOBILE-----------------------------------------*/
+@media(min-width: 320px) and (max-width: 991px) {
+
+    body {
+        background-color: aqua;
+    }
+
+    .clients-main {
+        display: flex;
+        background: #EFEFEF;
+        padding-left: 10%;
+        padding-top: 80px;
+        width: 100%;
+        height: 423px;
+        box-sizing: border-box;
+    }
+
+    /* .h2-clients-main {
+        font-size: 26px;
+        line-height: 101.38%;
+    } */
+    
+    .client-card {
+        width: 458.12px;
+        height: 261.2px;
+        box-sizing: border-box;
+        margin-bottom: 111px;
+        margin-top: 60px;
+        padding-top: 23px;
+        padding-left: 26px;
+        padding-right: 26px;
+        background: #FFFFFF;
+        box-shadow: 0.579167px 0.579167px 11.5833px rgba(0, 0, 0, 0.25);
+        border-radius: 17.375px;
+    }
+    
+    .text_courses {
+        display: block;
+        font-size: 20px;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-top: 18px;
+        padding-left: 21px;
+        padding-right: 21px;
+    }
+    
+    .text-courses-card {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 150%;
+    }
+    
+    .image-name-course {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        margin-top: 12px;
+    }
+    
+    .image-woman {
+        width: 80px;
+        height: 84px;
+        display: block;
+        position: relative;
+        top: 50px;
+        right: 90px;
     }
     
     .name-course {
@@ -1675,6 +1856,8 @@ h3.described {
         position: relative;
         top: 80px;
         left: 50px;
+        width: 14.91px;
+        height: 17.2px;
     }
 
 }
