@@ -986,7 +986,7 @@ h1 {
     left: 60%;
     right: 0;
     top: 3287px;
-    width: 630px;
+    width: auto;
     height: 14px;
     background-color: black;
 }
@@ -1236,7 +1236,7 @@ p.text_card {
     display: flex;
     position: relative;
     width: 20%;
-    left: 980px;
+    left: 880px;
     bottom: 140px;
 }
 
@@ -1272,8 +1272,7 @@ p.text_card {
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
-    justify-content: center;
+    display: block;
     width: 100%;
 }
 
@@ -1577,9 +1576,10 @@ h3.described {
         margin-top: 20px;
         margin-left: auto;
         margin-right: auto;
-        display: flex;
+        display: block;
         flex-direction: column;
-        /* text-align: center; */
+        justify-content: center;
+        text-align: center;
         width: 100%;
         height: auto;
     }
@@ -1587,9 +1587,9 @@ h3.described {
     .header-autors-course {
         display: block;
         position: static;
-        width: 95vw;
+        width: 100%;
         height: auto;
-        justify-content: left;
+        justify-content: center;
         padding-left: 50px;
     }
 
@@ -1710,7 +1710,6 @@ h3.described {
     padding-left: 122px;
     padding-top: 58px;
     width: 100vw;
-    width: 834px;
     height: 780px;
     box-sizing: border-box;
 }
@@ -1976,18 +1975,18 @@ h3.described {
 .last-block-cont {
     background-color: rgba(157, 201, 200, 1);
     width: 100%;
-    height: 780px;    
+    height: 780px;  
 }
 
 .begin {
-    padding-top: 179px;
-    margin-left: 122px;
+    padding-top: 176px;
+    padding-left: 122px;
     font-size: 55px;
-    
 }
 
 .price {
     margin-left: 122px;
+    margin-top: 55px;
     font-size: 25px;
     
 }
@@ -1995,29 +1994,43 @@ h3.described {
 .rub {
     margin-left: 122px;
     font-size: 80px;
-    padding-top: 84px;
 }
 
-.text-n2rigth {
-    flex-grow: 1;
-    padding-left: 486px;
-    margin-bottom: 200px;
-}
-
-.text-n2rigth h6 {
-    font-size: 25px;
-    
+.text-block-course-start {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 100px;
+    left: 122px;
 }
 
 .text-n1left {
-    flex-grow: 1;
-    padding-left: 122px;
-    
+    display: flex;
+    flex-direction: column;
+    width: 400px; 
 }
 
 .text-n1left h6 {
     font-size: 25px;
-    
+    line-height: 101.38%;
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.text-n2rigth {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 100px;
+}
+
+.text-n2right h6 {
+    font-size: 25px;
+    line-height: 101.38%;
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 15px;
 }
 
 .text-n1 {
@@ -2041,12 +2054,14 @@ h3.described {
 .footer-container {
     background-color: black; 
     width: 100%;
+    box-sizing: border-box;
     height: 390px;
     display: flex;
     flex-direction: row;
     padding-left: 122px;
     padding-right: 146px;
     padding-top: 50px;
+    padding-bottom: 50px;
     margin: 0 auto;
 }
 
@@ -2074,7 +2089,7 @@ h3.described {
 .footer-synchron {
     color:rgba(255, 255, 255, 1); 
     font-size: 18px; 
-    padding-top: 185px;
+    padding-top: 160px;
 }
 
 .footer-right p {
@@ -2085,16 +2100,15 @@ h3.described {
 
 .footer-mail {
     color:rgba(255, 255, 255, 1);
-
 }
 
-.footer-meseg {
+.footer-message {
     display: flex;
     padding-top: 30px;
     
 }
 
-.footer-meseg a {
+.footer-message a {
     display: flex;
     margin-right: 21px;
 }
