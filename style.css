@@ -983,9 +983,9 @@ h1 {
 .line {
     display: flex;
     position: absolute;
-    left: 50%;
+    left: 60%;
     right: 0;
-    top: 10px;
+    top: 3287px;
     width: 630px;
     height: 14px;
     background-color: black;
