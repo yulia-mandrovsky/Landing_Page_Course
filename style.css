@@ -67,6 +67,7 @@ p {
 
 .header-cinema {
     width: 100%;
+    box-sizing: border-box;
     padding-top: 5%;
     padding-left: 5%;
     padding-right: 5%;
@@ -336,6 +337,7 @@ h1 {
     width: 100%;
     padding-left: 5%;
     padding-right: 5%;
+    box-sizing: border-box;
 }
 
 .abot-course-block1 {
@@ -477,6 +479,7 @@ h1 {
 
 .abot-course__block2 {
     display: flex;
+    box-sizing: border-box;
 }
 
 .abot-course__img2 {
@@ -643,6 +646,7 @@ h1 {
     margin-top: 10%;
     padding-left: 5%;
     padding-right: 5%;
+    box-sizing: border-box;
 }
 
 .lessons__h2 {
@@ -964,6 +968,7 @@ h1 {
     display: flex;
     width: 100%;
     justify-content: center;
+    text-align: center;
     overflow: hidden;
 }
 
@@ -985,19 +990,17 @@ h1 {
     position: absolute;
     left: 60%;
     right: 0;
-    top: 3287px;
+    top: 3308px;
     width: auto;
     height: 14px;
     background-color: black;
 }
 
 .cards {
-    width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
-    max-width: 90%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 20px;
     padding-top: -10px;
     display: flex;
     flex-wrap: wrap;
@@ -1006,8 +1009,9 @@ h1 {
 
 .card {
     display: block;
-    width: 30%;
-    /* height: 328px; */
+    width: 399px;
+    height: 328px;
+    box-sizing:border-box;
     background: #FFFFFF;
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
@@ -1040,12 +1044,10 @@ h1 {
     box-sizing: border-box;
 }
 
-p.text_card {
+.p-card {
     display: block;
     position: relative;
-    bottom: 30px;
-    position: relative;
-    bottom: 20px;
+    top: 10px;
     line-height: 130%;
 }
 
@@ -1229,15 +1231,14 @@ p.text_card {
 
 .working-man-container {
     display: flex;
-    position: relative;
 }
 
 .working-man {
     display: flex;
-    position: relative;
+    position: absolute;
     width: 20%;
-    left: 880px;
-    bottom: 140px;
+    left: 930px;
+    top: 4370px;
 }
 
 /*  - -------------------------- MEDIA TABLET-----------------------------------------*/
