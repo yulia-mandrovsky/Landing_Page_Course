@@ -1090,7 +1090,7 @@ h1 {
         flex-direction: row;
         height: 70px;
         margin-bottom: 50px;
-        padding-left: 60px;
+        padding-left: 130px;
         overflow: hidden;
     }
 
@@ -1100,22 +1100,22 @@ h1 {
     }
 
     .line {
-        display: block;
+        display: flex;
         position: absolute;
-        left: 50%;
+        left: 55%;
         right: 0;
-        width: 630px;
-        height: 14px;
+        top: 34px;
+        width: auto;
+        height: 8px;
         background-color: black;
     }    
 
     .cards {
-        width: 90%;
-        padding-left: 5%;
-        padding-right: 5%;
+        width: 834px;
         margin-left: auto;
         margin-right: auto;
-        padding-top: -10px;
+        padding-top: 9px;
+        padding-left: 100px;
         display: flex;
         flex-wrap: wrap;
         flex-direction: left;
@@ -1123,7 +1123,7 @@ h1 {
 
     .card {
         width: 231.09px;
-        height: 189.97px;
+        height: 189.97px;   
         background: #FFFFFF;
         box-shadow: 0.579167px 0.579167px 8.6875px rgba(0, 0, 0, 0.25);
         margin-bottom: 23px;
@@ -1161,7 +1161,7 @@ h1 {
         margin-left: 12px;
         margin-top: 10px;
         padding-left: 5px;
-        padding-bottom: 25px;
+        padding-bottom: 45px;
         height: 50%;
         box-sizing: border-box;
     }
@@ -1271,15 +1271,17 @@ h1 {
     .working-man-container {
         display: flex;
         position: relative;
+        width: 1280px;
+    
     }
-
+    
     .working-man {
-        display: block;
+        display: flex;
         position: relative;
-        width: 20%;
-        right: 15%;
-        bottom: 140px;
-        left: 60%;
+        width: 146.53px;
+        height: 115.25px;
+        left: 700px;
+        top: -88px;
     }
 }
 
