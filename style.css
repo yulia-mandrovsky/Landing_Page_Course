@@ -11,6 +11,8 @@ body {
     width: 100%;
 }
 
+/* ------- Wrapper for all page ----------- */
+
 .wrapper-for-all {
     width: 100%;
     box-sizing: border-box;
@@ -68,9 +70,9 @@ p {
     }
 }
 
-/* <!-- Pasha --> */
 
-/* ------ HEADER ------*/
+
+/* ------ HEADER for Desktop ------*/
 
 .header-cinema {
     width: 1280px;
@@ -204,7 +206,7 @@ h1 {
     text-align: right;
 }
 
-/*  - -------------------------- MEDIA TABLET-----------------------------------------*/
+/*  - --------------- Header MEDIA TABLET-----------------------------------------*/
 
 @media screen and (min-width: 992px) and (max-width: 1279px) {
     header {
@@ -271,7 +273,7 @@ h1 {
     }
 }
 
-/*  - -------------------------- MEDIA MOBILE-----------------------------------------*/
+/*  - ----------------- Header MEDIA MOBILE-----------------------------------------*/
 
 @media screen and (max-width: 991px) {
     header {
@@ -352,6 +354,8 @@ h1 {
 
 /* ----- MAIN -------------*/
 
+/* About Course Block for Desktop */
+
 .abot-course {
     width: 100%;
     padding-left: 5%;
@@ -403,7 +407,7 @@ h1 {
     margin-left: 30px;
 }
 
-/*  - -------------------------- MEDIA TABLET-----------------------------------------*/
+/*  - ---------------About Course MEDIA TABLET-----------------------------------------*/
 
 @media screen and (min-width: 992px) and (max-width: 1279px) {
     main {
@@ -447,7 +451,7 @@ h1 {
     }
 }
 
-/*  - -------------------------- MEDIA MOBILE-----------------------------------------*/
+/*  --------------- About Course MEDIA MOBILE-----------------------------------------*/
 
 @media screen and (max-width: 991px) {
     main {
@@ -552,7 +556,7 @@ h1 {
 
 
 
-/*  - -------------------------- MEDIA TABLET-----------------------------------------*/
+/*  - --------------- About Course MEDIA TABLET-----------------------------------------*/
 
 
 @media screen and (min-width: 992px) and (max-width: 1279px) {
@@ -587,7 +591,7 @@ h1 {
 }
 
 
-/*  - -------------------------- MEDIA MOBILE-----------------------------------------*/
+/*  - -------------- About Course MEDIA MOBILE-----------------------------------------*/
 
 @media screen and (max-width: 991px) {
     .abot-course__block2 {
@@ -722,7 +726,7 @@ h1 {
     width: 22%;
 }
 
-/*  - -------------------------- MEDIA TABLET-----------------------------------------*/
+/*  - ------------Lessons Block MEDIA TABLET-----------------------------------------*/
 
 @media screen and (min-width: 992px) and (max-width: 1279px) {
     .lessons {
@@ -757,7 +761,7 @@ h1 {
     }
 }
 
-/*  - -------------------------- MEDIA MOBILE-----------------------------------------*/
+/*  - ------------ Lessons Block MEDIA MOBILE-----------------------------------------*/
 
 @media screen and (max-width: 991px) {
     .lessons {
@@ -802,7 +806,7 @@ h1 {
 }
 
 /* ----END ---"Формат занятий" ------*/
-/* -------Блок learn "Что узнаем" ----*/
+/* -------Блок learn "Что узнаем" for Desktop ----*/
 
 .learn {
     display: flex;
@@ -877,7 +881,7 @@ h1 {
     margin-right: -40px;
 }
 
-/*  - -------------------------- MEDIA TABLET-----------------------------------------*/
+/*  - ------------Learn Block for MEDIA TABLET-----------------------------------------*/
 
 
 @media screen and (min-width: 992px) and (max-width: 1279px) {
@@ -913,7 +917,7 @@ h1 {
     }
 }
 
-/*  - -------------------------- MEDIA MOBILE-----------------------------------------*/
+/*  - -------------- Learn Block for MEDIA MOBILE-----------------------------------------*/
 
 
 @media screen and (max-width: 991px) {
@@ -978,11 +982,9 @@ h1 {
     }
 }
 
-/* ------- END --"Что узнаем" ----*/
+/* ------- END  Block of Learn "Что узнаем" ----*/
 
-/* <!-- Yulia --> */
-
-/* ---------------- Block Program ----------------- */
+/* ---------------- Block Program for Desktop ----------------- */
 .program {
     display: flex;
     width: 100%;
@@ -1071,7 +1073,7 @@ h1 {
     line-height: 130%;
 }
 
-/*  - -------------------------- MEDIA TABLET-----------------------------------------*/
+/*  - ----------- Program Block for MEDIA TABLET-----------------------------------------*/
 
 @media screen and (min-width: 992px) and (max-width: 1279px) {
     .program {
@@ -1165,7 +1167,7 @@ h1 {
     }
 }
 
-/*  - -------------------------- MEDIA MOBILE-----------------------------------------*/
+/*  - -------------- Program Block for MEDIA MOBILE-----------------------------------------*/
 @media screen and (max-width: 991px) {
     .program {
         display: flex;
@@ -1247,7 +1249,7 @@ h1 {
 
 /* ---------------------- END "Block Program" -------------------------- */
 
-/* ---------------- Image Working Man ----------------- */
+/* ---------------- Image Working Man for Desktop ----------------- */
 
 .working-man-container {
     display: flex;
@@ -1264,7 +1266,7 @@ h1 {
     bottom: 125px;
 }
 
-/*  - -------------------------- MEDIA TABLET-----------------------------------------*/
+/*  - -----------Working Man for MEDIA TABLET-----------------------------------------*/
 @media screen and (min-width: 992px) and (max-width: 1279px) {
     .working-man-container {
         display: flex;
@@ -1281,7 +1283,7 @@ h1 {
     }
 }
 
-/*  - -------------------------- MEDIA MOBILE-----------------------------------------*/
+/*  - ------------Working Man for MEDIA MOBILE-----------------------------------------*/
 @media screen and (max-width: 991px) {
     .working-man-container {
         display: none;
@@ -1290,7 +1292,7 @@ h1 {
 
 /* ------------------- END Image Working Man ----------------- */
 
-/* -------------------- Block Autors --------------------- */
+/* -------------------- Block Autors for Desktop --------------------- */
 
 .autors-courses-main {
     margin-top: 72px;
@@ -1449,7 +1451,7 @@ h3.described {
     margin-top: 13px;
 }
 
-/*  - -------------------------- MEDIA TABLET-----------------------------------------*/
+/*  - -----------Block Autors for MEDIA TABLET-----------------------------------------*/
 @media screen and (min-width: 992px) and (max-width: 1279px) {
     .autors-courses-main {
         margin-top: 30px;
@@ -1609,7 +1611,7 @@ h3.described {
     }
 }
 
-/*  - -------------------------- MEDIA MOBILE-----------------------------------------*/
+/*  - -----------Block Autors for MEDIA MOBILE-----------------------------------------*/
 @media screen and (max-width: 991px) {
     .autors-courses-main {
         margin-top: 20px;
@@ -1741,7 +1743,7 @@ h3.described {
 
 /* -------------------- END "Block Autors" --------------------- */
 
-/* -------------------- Clients ------------------------ */
+/* -----------Block Clients for Desktop ------------------------ */
 
 
 .clients-main {
@@ -1818,7 +1820,7 @@ h3.described {
     left: 0;
 }
 
-/*  - -------------------------- MEDIA TABLET-----------------------------------------*/
+/*  ------------ Block Clients for MEDIA TABLET-----------------------------------------*/
 @media screen and (min-width: 992px) and (max-width: 1279px) {
 
     .clients-main {
@@ -1898,7 +1900,7 @@ h3.described {
     }
 }
 
-/*  - -------------------------- MEDIA MOBILE-----------------------------------------*/
+/*  - ------------ Block Clients for MEDIA MOBILE-----------------------------------------*/
 @media screen and (min-width: 320px) and (max-width: 991px) {
 
 
@@ -2009,7 +2011,7 @@ h3.described {
 
 /* -------------------- END "Block Clients" --------------------- */
 
-/* <!-- Shamil --> */
+/* --------------------- Course Start Block for Desktop ----------------------- */
 
 .last-block-cont {
     background-color: rgba(157, 201, 200, 1);
@@ -2082,6 +2084,8 @@ h3.described {
     color: rgba(0, 0, 0, 1);
     font-size: 18px;
 }
+
+
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
