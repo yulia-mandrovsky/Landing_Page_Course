@@ -1079,91 +1079,90 @@ h1 {
     .program {
         display: flex;
         width: 100%;
-        max-width: 1279px;
         justify-content: center;
         text-align: center;
         overflow: hidden;
     }
-
+    
     .header-program {
         display: flex;
+        position: relative;
         flex-direction: row;
-        height: 70px;
-        margin-bottom: 50px;
-        padding-left: 130px;
+        margin-bottom: 71.5px;
+        padding-left: 110px;
         overflow: hidden;
     }
-
+    
     .h2-program {
-        font-size: 32px;
-        line-height: 101.38%;
+        margin-left: 40px;
+        padding-top: 14px;
     }
-
+    
     .line {
         display: flex;
         position: absolute;
-        left: 55%;
+        left: 55.4%;
         right: 0;
         top: 34px;
         width: auto;
-        height: 8px;
+        height: 8.1px;
         background-color: black;
-    }    
-
+    }
+    
     .cards {
         width: 834px;
         margin-left: auto;
         margin-right: auto;
-        padding-top: 9px;
-        padding-left: 100px;
+        padding-left: 97px;
+        padding-top: 0;
         display: flex;
         flex-wrap: wrap;
         flex-direction: left;
     }
-
+    
     .card {
+        display: block;
         width: 231.09px;
-        height: 189.97px;   
+        height: 189.97px;
+        box-sizing:border-box;
         background: #FFFFFF;
-        box-shadow: 0.579167px 0.579167px 8.6875px rgba(0, 0, 0, 0.25);
+        box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.25);
+        border-radius: 30px;
         margin-bottom: 23px;
         margin-right: 21px;
     }
-
+    
     .card:nth-of-type(3) {
         margin-right: 0;
     }
-
+    
     .card:nth-of-type(6) {
         margin-right: 0;
     }
-
-    h3.text_card {
-        font-size: 17px;
-        line-height: 130%;
-    }
-
-    p.text_card {
-        font-size: 14px;
-        line-height: 130%;
-    }
-
+    
     .program-icon {
-        width: 231.09px;
-        height: 92.67px;
+        width: 100%;
     }
-
-
+    
+    
     .text_card {
         display: flex;
+        position: relative;
         flex-direction: column;
         justify-content: space-between;
         margin-left: 12px;
-        margin-top: 10px;
-        padding-left: 5px;
-        padding-bottom: 45px;
+        margin-top: 4px;
+        padding-left: 3px;
+        padding-bottom: 0px;
         height: 50%;
         box-sizing: border-box;
+    }
+    
+    .p-card {
+        display: block;
+        position: relative;
+        line-height: 130%;
+        top: -20px;
     }
 }
 
@@ -1281,7 +1280,7 @@ h1 {
         width: 146.53px;
         height: 115.25px;
         left: 700px;
-        top: -88px;
+        top: -70px;
     }
 }
 
@@ -1456,160 +1455,162 @@ h3.described {
 /*  - -----------Block Autors for MEDIA TABLET-----------------------------------------*/
 @media screen and (min-width: 992px) and (max-width: 1279px) {
     .autors-courses-main {
-        margin-top: 30px;
+        margin-top: 47px;
         margin-left: auto;
         margin-right: auto;
-        justify-content: center;
-        width: 100%;
+        display: block;
+        position: relative;
+        width: 834px;
     }
-
+    
     .header-autors-course {
         display: block;
         position: relative;
-        width: 95vw;
+        left: 10px;
+        max-width: 834px;
+        box-sizing: border-box;
         justify-content: center;
         padding-left: 60px;
     }
-
-    h2.autors-courses-main {
-        font-size: 32px;
-        line-height: 101.38%;
-    }
-
-    h3.autors-courses-main {
-        font-size: 17px;
-        line-height: 101.38%;
-    }
-
+    
     .autors-block {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin-top: 50px;
+        margin-top: -8px;
         margin-left: auto;
         margin-right: auto;
-        width: 90%;
-
+        width: 95%;
+    
     }
-
-
-    .described {
-        display: flex;
-        position: relative;
-        margin-left: 25px;
-        padding-top: 45px;
-        /* width: 400px; */
-    }
-
+    
     .p-info {
         display: block;
         font-size: 10px;
         line-height: 130%;
     }
-
+    
     .autors {
         display: flex;
         position: relative;
         flex-direction: row;
         justify-content: center;
-        height: 460px;
+        height: 300px;
+        padding-bottom: 5px;
     }
-
-    .photo {
-        width: 109px;
-        height: 103px;
+    
+    .photo-1{
+        display: block;
+        position: relative;
+        top: 19px;
+        left: 14px;
+        width: 109.46px;
+        height: 103.09px;
     }
-
+    
+    .photo-2 {
+        display: block;
+        position: relative;
+        left: 12px;
+        top: 23px;
+        width: 104.25px;
+        height: 96.14px;
+    }
+    
     .autors-name {
         font-family: Roboto Slab;
         font-style: normal;
         font-weight: bold;
         font-size: 17px;
         line-height: 101.38%;
+        padding-top: 3px;
     }
-
+    
     .icon-i-autors-1 {
         display: block;
-        position: relative;
-        width: 16.5px;
-        top: 70%;
-        right: 600px;
+        position: absolute;
+        width: 18.22px;
+        height: 18.22px;
+        top: 48px;
+        right: 213px;
     }
-
+    
     .icon-i-autors-2 {
         display: block;
         position: absolute;
-        width: 16.5px;
-        top: 0px;
-        right: 75px;
+        width: 18.22px;
+        height: 18.22px;
+        top: 51px;
+        right: 215px;
     }
-
+    
     .autor-1 {
         display: flex;
         position: relative;
-        top: 20px;
-        left: 45px;
+        top: 25x;
+        left: 192px;
         margin-bottom: 30px;
-    }
-
+    }   
+    
     .info-block-autor1 {
-        display: block;
+        display: none;
         position: relative;
-        top: 25px;
-        right: 35px;
-        box-sizing: border-box;
-        padding-left: 25px;
-        padding-right: 11px;
-        padding-top: 8px;
+        top: 28px;
+        right: 15px;
         width: 231.09px;
         height: 158.69px;
         background: #FFFFFF;
         box-shadow: 0.579167px 0.579167px 11.5833px rgba(0, 0, 0, 0.25);
         border-radius: 17.375px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
     }
-
+    
     .icon-i-autors-1:hover+.info-block-autor1 {
         display: block;
     }
-
+    
     .autor-2 {
         display: flex;
         position: relative;
-        top: 95px;
-        left: 30px;
+        top: 74px;
+        left: 5px;
         margin: 0;
     }
-
+    
     .info-block-autor2 {
-        display: block;
+        display: none;
         position: absolute;
-        bottom: 487px;
-        right: 17px;
-        box-sizing: border-box;
-        padding-left: 25px;
-        padding-right: 25px;
-        padding-top: 5px;
+        bottom: 468px;
+        right: 178px;
         width: 231.09px;
         height: 219.5px;
         background: #FFFFFF;
         box-shadow: 0.579167px 0.579167px 11.5833px rgba(0, 0, 0, 0.25);
         border-radius: 17.375px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 8px;
     }
-
+    
     .icon-i-autors-2:hover+.info-block-autor2 {
         display: block;
     }
-
-
-
+    
+    
+    .described {
+        margin-left: 25px;
+        padding-top: 45px;
+        width: 400px;
+    }
+    
     h3.described {
         margin-bottom: 0;
     }
-
+    
     .p-info {
-        margin-top: 12px;
-        font-size: 10px;
-        line-height: 130%;
+        margin-top: 8px;
     }
 }
 
@@ -1827,8 +1828,8 @@ h3.described {
 
     .clients-main {
         background: #EFEFEF;
-        padding-left: 71px;
-        padding-top: 40px;
+        padding-left: 151px;
+        padding-top: 47px;
         width: 100vw;
         height: 452px;
         box-sizing: border-box;
@@ -1842,10 +1843,10 @@ h3.described {
         width: 458.12px;
         height: 261.2px;
         box-sizing: border-box;
-        margin-bottom: 111px;
-        margin-top: 30px;
+        margin-bottom: 80px;
+        margin-top: 36px;
         padding-top: 23px;
-        padding-left: 26px;
+        padding-left: 10px;
         padding-right: 26px;
         background: #FFFFFF;
         box-shadow: 0.579167px 0.579167px 11.5833px rgba(0, 0, 0, 0.25);
@@ -1870,8 +1871,8 @@ h3.described {
     .image-woman {
         display: block;
         position: relative;
-        top: 5px;
-        right: 10px;
+        top: 4px;
+        right: -5px;
         width: 110.04px;
         height: 97.88px;
     }
@@ -1879,10 +1880,10 @@ h3.described {
     .name-course {
         display: block;
         position: relative;
-        left: -10px;
+        left: -3px;
         flex-direction: column;
         margin-left: 25px;
-        margin-top: 50px;
+        margin-top: 27px;
     }
 
     .name-clients-course {
@@ -1897,8 +1898,8 @@ h3.described {
         width: 18.53px;
         height: 17.95px;
         position: absolute;
-        top: 25px;
-        left: 0;
+        top: 34px;
+        left: 1px;
     }
 }
 
@@ -2087,7 +2088,89 @@ h3.described {
     font-size: 18px;
 }
 
-
+/* --------------------------- Course Start Block for Media Tablet ----------------- */
+@media screen and (min-width: 992px) and (max-width: 1279px) {
+    
+    .last-block-cont {
+        background-color: rgba(157, 201, 200, 1);
+        width: 100%;
+        height: 452px; 
+    }
+    
+    .begin {
+        padding-top: 97px;
+        padding-left: 151px;
+        font-size: 55px;
+    }
+    
+    .price {
+        margin-left: 150px;
+        margin-top: 33px;
+        font-size: 14px;
+        line-height: 101.38%;
+    
+    }
+    
+    .rub {
+        margin-left: 150px;
+        margin-top: 5px;
+        font-size: 46px;
+        line-height: 101.38%;
+    }
+    
+    .text-block-course-start {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: 42px;
+        left: 150px;
+    }
+    
+    .text-n1left {
+        display: flex;
+        flex-direction: column;
+        width: 200px; 
+    }
+    
+    .text-n1left h6 {
+        font-size: 14px;
+        line-height: 101.38%;
+        font-style: normal;
+        font-weight: normal;
+        margin-bottom: 15px;
+    }
+    
+    .text-n2right {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 0px;
+        padding-left: 10px;
+    }
+    
+    .text-n2right h6 {
+        font-size: 14px;
+        line-height: 101.38%;
+        font-style: normal;
+        font-weight: normal;
+        margin-bottom: 15px;
+    }
+    
+    .text-n1 {
+        margin-top: -5px;
+        color: rgba(0, 0, 0, 1);
+        font-size: 10px;
+        line-height: 101.38%;
+    }
+    
+    .text-n2 {
+        margin-top: -5px;
+        color: rgba(0, 0, 0, 1);
+        font-size: 10px;
+        line-height: 101.38%;
+    }
+    
+}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
