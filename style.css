@@ -63,6 +63,7 @@ p {
 
     h2 {
         font-size: 26px;
+
     }
 
     h3 {
@@ -1171,6 +1172,7 @@ h1 {
 @media screen and (max-width: 991px) {
     .program {
         display: flex;
+        position: relative;
         text-align: center;
         justify-content: center;
         width: 100%;
@@ -1179,12 +1181,14 @@ h1 {
     .header-program {
         width: 100%;
         padding-left: 0px;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
         box-sizing: border-box;
         margin-bottom: 43px;
         display: flex;
         position: relative;
-        right: 13px;
+        right: 0px;
+        left: 15px;
+        bottom: 4px;
         flex-wrap: nowrap;
     }
 
@@ -1211,8 +1215,9 @@ h1 {
         position: relative;
         flex-direction: column;
         justify-content: center;
-        margin-left: 0;
-        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -13px;
         padding-left: 3px;
         padding-bottom: 0;
         width: 320px;
@@ -1474,19 +1479,21 @@ h3.described {
 /*  - -----------Block Autors for MEDIA TABLET-----------------------------------------*/
 @media screen and (min-width: 992px) and (max-width: 1279px) {
     .autors-courses-main {
-        margin-top: 47px;
+        margin-top: 20px;
         margin-left: auto;
         margin-right: auto;
         display: block;
         position: relative;
-        width: 834px;
+        width: 320px;
     }
     
     .header-autors-course {
         display: block;
         position: relative;
         left: 10px;
-        max-width: 834px;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
         box-sizing: border-box;
         justify-content: center;
         padding-left: 60px;
@@ -1635,17 +1642,18 @@ h3.described {
 
 /*  - -----------Block Autors for MEDIA MOBILE-----------------------------------------*/
 @media screen and (max-width: 991px) {
+
     .autors-courses-main {
-        margin-top: 20px;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
         flex-direction: column;
         justify-content: center;
-        text-align: center;
+        text-align: left;
+        margin-top: 47px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
         width: 100%;
-        height: auto;
     }
+    
 
     .header-autors-course {
         display: block;
@@ -1653,14 +1661,14 @@ h3.described {
         width: 100%;
         height: auto;
         justify-content: center;
-        padding-left: 50px;
+        padding-left: 38px;
     }
 
     .autors-block {
         display: flex;
         flex-direction: column;
         justify-content: left;
-        margin-top: 30px;
+        margin-top: 10px;
         margin-left: auto;
         margin-right: auto;
         width: 95vw;
@@ -1683,10 +1691,22 @@ h3.described {
         justify-content: left;
     }
 
-    .photo {
+    .photo-1{
         display: block;
-        position: static;
-        left: 0;
+        position: relative;
+        top: 25px;
+        left: 18px;
+        width: 88.07px;
+        height: 82.94px;
+    }
+    
+    .photo-2 {
+        display: block;
+        position: relative;
+        left: 17px;
+        top: 27px;
+        width: 83.88px;
+        height: 77.35px;
     }
 
     .autors-name {
@@ -1695,6 +1715,7 @@ h3.described {
         font-weight: bold;
         font-size: 14px;
         line-height: 101.38%;
+        padding-top: 5px;
     }
 
     .icon-i-autors-1 {
@@ -1707,8 +1728,9 @@ h3.described {
 
     .autor-1 {
         display: flex;
+        flex-direction: row;
         position: static;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
         height: auto;
     }
 
@@ -1719,9 +1741,9 @@ h3.described {
         background: 0;
         box-shadow: 0 0 0 0;
         border-radius: 0;
-        padding-left: 12px;
-        padding-right: 12px;
-        padding-top: 10px;
+        padding-left: 1px;
+        padding-right: 28px;
+        padding-top: 21px;
         position: static;
         top: 45px;
         right: 22px;
@@ -1732,25 +1754,34 @@ h3.described {
 
     .autor-2 {
         display: flex;
+        position: relative;
+        flex-direction: row;
+        top: -4px;
+        left: 4px;
         margin: 0;
     }
 
     .info-block-autor2 {
-        display: block;
-        position: static;
+        display: flex;
+        position: relative;
         height: auto;
         background: 0;
         box-sizing: border-box;
         box-shadow: 0 0 0;
         border-radius: 0;
-        padding-left: 12px;
-        padding-right: 12px;
-        padding-top: 10px;
+        padding-left: 1px;
+        padding-right: 0px;
+        padding-top: 19px;
+        right: 0px;
+        top: 0px;
+        width: 207px;
+        padding-bottom: 64px;
+
     }
 
     .described {
-        margin-left: 25px;
-        padding-top: 45px;
+        margin-left: 27px;
+        padding-top: 42px;
         /* width: 400px; */
     }
 
@@ -1759,7 +1790,7 @@ h3.described {
     }
 
     .p-info {
-        margin-top: 12px;
+        margin-top: 7px;
     }
 }
 
@@ -1927,12 +1958,10 @@ h3.described {
 
 
     .clients-main {
-        display: flex;
-        flex-direction: column;
         background: #EFEFEF;
-        padding-top: 42px;
-        padding-left: 0;
-        width: 100%;
+        padding-left: 34px;
+        padding-top: 38px;
+        width: 100vw;
         height: 423px;
         box-sizing: border-box;
     }
@@ -1945,7 +1974,6 @@ h3.described {
         display: block;
         flex-direction: column;
         margin-left: 50px;
-
         padding-left: 70px;
         padding-right: 20px;
         font-size: 26px;
@@ -1959,22 +1987,25 @@ h3.described {
         display: flex;
         flex-direction: column;
         position: relative;
-        margin-top: 32px;
+        right: 15px;
+        margin-top: 16px;
+        margin-left: auto;
+        margin-right: auto;
         padding-top: 20px;
         padding-left: 20px;
         padding-right: 20px;
-        margin-left: auto;
-        margin-right: auto;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+        background: #FFFFFF;
+        box-shadow: 0.465972px 0.465972px 9.31944px rgba(0, 0, 0, 0.25);
+        border-radius: 13.9792px;
     }
 
     .text_courses {
         display: block;
-        margin-top: 20px;
+        margin-top: 18px;
         margin-left: 20px;
         margin-right: 20px;
-        padding-top: 10px;
-        padding-left: 21px;
+        padding-top: 5px;
+        padding-left: 11px;
         padding-right: 21px;
     }
 
@@ -1983,6 +2014,7 @@ h3.described {
         font-weight: normal;
         font-size: 10px;
         line-height: 150%;
+        margin-left: 0px;
     }
 
     .image-name-course {
@@ -1994,18 +2026,19 @@ h3.described {
 
     .image-woman {
         width: 80px;
-        height: 75px;
+        height: 84px;
         box-sizing: border-box;
         display: block;
         position: relative;
-        top: 5px;
-        right: 10px;
+        top: 7px;
+        right: 0px;
     }
 
     .name-course {
         display: block;
         position: relative;
-        left: -10px;
+        left: 5px;
+        bottom: 5px;
         flex-direction: column;
         margin-left: 10px;
         margin-top: 58px;
@@ -2023,7 +2056,7 @@ h3.described {
     .fb-icon-course {
         display: block;
         position: relative;
-        top: -20px;
+        top: -10px;
         left: 0;
         width: 14.91px;
         height: 17.2px;
@@ -2051,6 +2084,10 @@ h3.described {
     padding-left: 122px;
     font-size: 55px;
 }
+
+.br-begin-course-start {
+        display: none;
+    }
 
 .price {
     display: block;
@@ -2139,6 +2176,10 @@ h3.described {
         font-size: 55px;
         width: 100pw;
     }
+
+    .br-begin-course-start {
+        display: none;
+    }
     
     .price {
         display: block;
@@ -2216,6 +2257,104 @@ h3.described {
     
 }
 
+/* ---------------------- Course Start Block for Media Mobile ----------------- */
+@media screen and (min-width: 320px) and (max-width: 991px) {
+
+    .last-block-cont {
+        background-color: rgba(157, 201, 200, 1);
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 363px; 
+    }
+
+    .begin {
+        padding-top: 58px;
+        padding-left: 34px;
+        font-size: 55px;
+        width: 100pw;
+    }
+    
+    .br-begin-course-start {
+        display: block;
+    }
+
+    .price {
+        display: block;
+        position: relative;
+        bottom: 20px;
+        margin-left: 34px;
+        margin-top: 0px;
+        font-size: 12px;
+        line-height: 101.38%;
+
+    }
+
+    .rub {
+        display: block;
+        position: relative;
+        bottom: 10px;
+        right: 60px;
+        margin-left: 0px;
+        margin-top: 5px;
+        font-size: 37px;
+        line-height: 101.38%;
+    }
+
+    .text-block-course-start {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: -18px;
+        left: 35px;
+    }
+
+    .text-n1left {
+        display: flex;
+        flex-direction: column;
+        width: 155px; 
+    }
+
+    .text-n1left h6 {
+        font-size: 12px;
+        line-height: 101.38%;
+        font-style: normal;
+        font-weight: normal;
+        margin-bottom: 15px;
+    }
+
+    .text-n2right {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 5px;
+        padding-left: 10px;
+    }
+
+    .text-n2right h6 {
+        font-size: 12px;
+        line-height: 101.38%;
+        font-style: normal;
+        font-weight: normal;
+        margin-bottom: 15px;
+    }
+
+    .text-n1 {
+        margin-top: -5px;
+        color: rgba(0, 0, 0, 1);
+        font-size: 10px;
+        line-height: 101.38%;
+    }
+
+    .text-n2 {
+        margin-top: -5px;
+        color: rgba(0, 0, 0, 1);
+        font-size: 10px;
+        line-height: 101.38%;
+    }
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 footer {
@@ -2264,6 +2403,7 @@ footer {
 .footer-contacts-p {
 	padding-right: 15px;
 }
+
 
 @media screen and (min-width: 992px) and (max-width: 1279px) {
 	.footer-content__img-sinc {
