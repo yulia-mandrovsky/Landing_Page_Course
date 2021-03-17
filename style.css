@@ -20,11 +20,16 @@ body {
 
 }
 
+/* ul {
+    padding: 0;
+    margin: 0;
+} */
+
 /* Desktope default */
 
 h1,
 h2 {
-    font-family: Roboto Slab, sans-serif;
+    font-family: "Roboto Slab", sans-serif;
 }
 
 
@@ -195,7 +200,7 @@ h1 {
 }
 
 .header-cinema__plate__p1 {
-    font-family: Roboto Slab;
+    font-family: "Roboto Slab";
     font-style: normal;
     font-weight: normal;
     font-size: 25px;
@@ -370,7 +375,7 @@ h1 {
 
 .abot-course__h2 {
     display: block;
-    font-family: Roboto Slab;
+    font-family: "Roboto Slab";
     font-style: normal;
     font-weight: bold;
     font-size: 55px;
@@ -677,7 +682,7 @@ h1 {
     display: block;
     left: 121px;
     top: 2000px;
-    font-family: Roboto Slab;
+    font-family: "Roboto Slab";
     font-style: normal;
     font-weight: bold;
     font-size: 55px;
@@ -697,7 +702,7 @@ h1 {
 .lessons__text1-p1,
 .lessons__text2-p1,
 .lessons__text3-p1 {
-    font-family: Roboto;
+    font-family: "Roboto";
     font-style: normal;
     font-weight: bold;
     font-size: 25px;
@@ -708,7 +713,7 @@ h1 {
 .lessons__text1-p2,
 .lessons__text2-p2,
 .lessons__text3-p2 {
-    font-family: Roboto;
+    font-family: "Roboto";
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -992,6 +997,7 @@ h1 {
     justify-content: center;
     text-align: center;
     overflow: hidden;
+    flex-direction: column;
 }
 
 .header-program {
@@ -999,7 +1005,7 @@ h1 {
     position: relative;
     flex-direction: row;
     margin-bottom: 125px;
-    padding-left: 110px;
+    padding-left: 20px;
     overflow: hidden;
 }
 
@@ -1011,7 +1017,7 @@ h1 {
 .line {
     display: flex;
     position: absolute;
-    left: 56%;
+    left: 57%;
     right: 0;
     top: 52px;
     width: auto;
@@ -1027,7 +1033,7 @@ h1 {
     padding-top: 0;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: left;
+    
 }
 
 .card {
@@ -1115,11 +1121,10 @@ h1 {
         box-sizing: border-box;
         margin-left: auto;
         margin-right: auto;
-        padding-left: 97px;
+        padding-left: 50px;
         padding-top: 0;
         display: flex;
         flex-wrap: wrap;
-        flex-direction: left;
     }
     
     .card {
@@ -1181,18 +1186,20 @@ h1 {
     .header-program {
         width: 100%;
         padding-left: 0px;
+        padding-top: 4px;
         padding-bottom: 20px;
         box-sizing: border-box;
         margin-bottom: 43px;
         display: flex;
         position: relative;
         right: 0px;
-        left: 15px;
+        left: 0px;
         bottom: 4px;
         flex-wrap: nowrap;
     }
 
     .h2-program {
+        margin-left: 4px;
         font-size: 26px;
         line-height: 101.38%;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
@@ -1201,10 +1208,11 @@ h1 {
     .line {
         display: block;
         position: absolute;
-        left: 80%;
+        left: 88%;
         right: 0px;
-        bottom: 360px;
-        width: 60px;
+        top: unset;
+        bottom: 28px;
+        width: 100%;
         height: 6.5px;
         background-color: black;
     
@@ -1285,7 +1293,7 @@ h1 {
     display: flex;
     position: relative;
     width: 20%;
-    left: 1070px;
+    left: 990px;
     bottom: 125px;
 }
 
@@ -1303,7 +1311,7 @@ h1 {
         position: relative;
         width: 146.53px;
         height: 115.25px;
-        left: 70%;
+        left: 55%;
         top: -70px;
     }
 }
@@ -1333,7 +1341,7 @@ h1 {
     width: 95vw;
     box-sizing: border-box;
     justify-content: center;
-    padding-left: 122px;
+    padding-left: 42px;
 }
 
 .autors-block {
@@ -1381,7 +1389,7 @@ h1 {
 }
 
 .autors-name {
-    font-family: Roboto Slab;
+    font-family: "Roboto Slab";
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
@@ -1484,26 +1492,27 @@ h3.described {
         margin-right: auto;
         display: block;
         position: relative;
-        width: 320px;
+        width: 100%;
     }
     
     .header-autors-course {
         display: block;
         position: relative;
-        left: 10px;
+        left: 100px;
+        top: 29px;
         max-width: 90%;
         margin-left: auto;
         margin-right: auto;
         box-sizing: border-box;
-        justify-content: center;
-        padding-left: 60px;
+        justify-content: left;
+        padding-left: 0px;
     }
     
     .autors-block {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin-top: -8px;
+        margin-top: 20px;
         margin-left: auto;
         margin-right: auto;
         width: 95%;
@@ -1544,7 +1553,7 @@ h3.described {
     }
     
     .autors-name {
-        font-family: Roboto Slab;
+        font-family: "Roboto Slab";
         font-style: normal;
         font-weight: bold;
         font-size: 17px;
@@ -1573,7 +1582,7 @@ h3.described {
     .autor-1 {
         display: flex;
         position: relative;
-        top: 25x;
+        top: 25px;
         left: 192px;
         margin-bottom: 30px;
     }   
@@ -1608,7 +1617,7 @@ h3.described {
     .info-block-autor2 {
         display: none;
         position: absolute;
-        bottom: 468px;
+        bottom: 268px;
         right: 178px;
         width: 231.09px;
         height: 219.5px;
@@ -1647,7 +1656,7 @@ h3.described {
         flex-direction: column;
         justify-content: center;
         text-align: left;
-        margin-top: 47px;
+        margin-top: 49px;
         margin-left: auto;
         margin-right: auto;
         display: flex;
@@ -1661,17 +1670,17 @@ h3.described {
         width: 100%;
         height: auto;
         justify-content: center;
-        padding-left: 38px;
+        padding-left: 5px;
     }
 
     .autors-block {
         display: flex;
         flex-direction: column;
         justify-content: left;
-        margin-top: 10px;
+        margin-top: 13px;
         margin-left: auto;
         margin-right: auto;
-        width: 95vw;
+        width: 99%;
         height: auto;
 
     }
@@ -1694,8 +1703,8 @@ h3.described {
     .photo-1{
         display: block;
         position: relative;
-        top: 25px;
-        left: 18px;
+        top: 24px;
+        left: -3px;
         width: 88.07px;
         height: 82.94px;
     }
@@ -1703,7 +1712,7 @@ h3.described {
     .photo-2 {
         display: block;
         position: relative;
-        left: 17px;
+        left: -4px;
         top: 27px;
         width: 83.88px;
         height: 77.35px;
@@ -1742,7 +1751,7 @@ h3.described {
         box-shadow: 0 0 0 0;
         border-radius: 0;
         padding-left: 1px;
-        padding-right: 28px;
+        padding-right: 10px;
         padding-top: 21px;
         position: static;
         top: 45px;
@@ -1780,7 +1789,7 @@ h3.described {
     }
 
     .described {
-        margin-left: 27px;
+        margin-left: 5px;
         padding-top: 42px;
         /* width: 400px; */
     }
@@ -1801,8 +1810,8 @@ h3.described {
 
 .clients-main {
     background: #EFEFEF;
-    padding-left: 122px;
-    padding-top: 81px;
+    padding-left: 42px;
+    padding-top: 82px;
     width: 100vw;
     height: 780px;
     box-sizing: border-box;
@@ -1860,7 +1869,7 @@ h3.described {
 }
 
 .name-clients-course {
-    font-family: Roboto Slab, sans-serif;
+    font-family: "Roboto Slab", sans-serif;
     font-weight: bold;
     font-size: 30px;
     line-height: 101.38%;
@@ -1878,7 +1887,7 @@ h3.described {
 
     .clients-main {
         background: #EFEFEF;
-        padding-left: 151px;
+        padding-left: 150px;
         padding-top: 47px;
         width: 100vw;
         height: 452px;
@@ -1896,7 +1905,7 @@ h3.described {
         margin-bottom: 80px;
         margin-top: 36px;
         padding-top: 23px;
-        padding-left: 10px;
+        padding-left: 8px;
         padding-right: 26px;
         background: #FFFFFF;
         box-shadow: 0.579167px 0.579167px 11.5833px rgba(0, 0, 0, 0.25);
@@ -1937,7 +1946,7 @@ h3.described {
     }
 
     .name-clients-course {
-        font-family: Roboto Slab, sans-serif;
+        font-family: "Roboto Slab", sans-serif;
         font-weight: bold;
         font-size: 17px;
         line-height: 101.38%
@@ -1959,8 +1968,8 @@ h3.described {
 
     .clients-main {
         background: #EFEFEF;
-        padding-left: 34px;
-        padding-top: 38px;
+        padding-left: 0px;
+        padding-top: 40px;
         width: 100vw;
         height: 423px;
         box-sizing: border-box;
@@ -1970,14 +1979,14 @@ h3.described {
         display: block;
     }
 
-    .h2-clients-main {
+    h2, .clients-main {
         display: block;
         flex-direction: column;
-        margin-left: 50px;
-        padding-left: 70px;
+        margin-left: 0px;
+        padding-left: 5px;
         padding-right: 20px;
         font-size: 26px;
-        line-height: 101.38%;
+        line-height: 28px;
     }
 
     .client-card {
@@ -1987,8 +1996,8 @@ h3.described {
         display: flex;
         flex-direction: column;
         position: relative;
-        right: 15px;
-        margin-top: 16px;
+        right: -1px;
+        margin-top: 25px;
         margin-left: auto;
         margin-right: auto;
         padding-top: 20px;
@@ -2001,11 +2010,11 @@ h3.described {
 
     .text_courses {
         display: block;
-        margin-top: 18px;
+        margin-top: 17px;
         margin-left: 20px;
         margin-right: 20px;
-        padding-top: 5px;
-        padding-left: 11px;
+        padding-top: 4px;
+        padding-left: 10px;
         padding-right: 21px;
     }
 
@@ -2048,7 +2057,7 @@ h3.described {
         display: block;
         position: relative;
         bottom: 30px;
-        font-family: Roboto Slab, sans-serif;
+        font-family: "Roboto Slab", sans-serif;
         font-size: 14px;
         line-height: 101.38%;
     }
@@ -2081,7 +2090,7 @@ h3.described {
     width: 100%;
     box-sizing: border-box;
     padding-top: 170px;
-    padding-left: 122px;
+    padding-left: 42px;
     font-size: 55px;
 }
 
@@ -2092,7 +2101,7 @@ h3.described {
 .price {
     display: block;
     position: relative;
-    margin-left: 122px;
+    margin-left: 42px;
     margin-top: 10px;
     bottom: 176px;
     font-size: 25px;
@@ -2135,7 +2144,7 @@ h3.described {
     flex-direction: column;
     position: relative;
     right: 140px;
-    padding-left: -50px;
+    padding-left: 0px;
 }
 
 .text-n2right h6 {
@@ -2174,7 +2183,7 @@ h3.described {
         padding-top: 97px;
         padding-left: 151px;
         font-size: 55px;
-        width: 100pw;
+        width: 100vw;
     }
 
     .br-begin-course-start {
@@ -2270,10 +2279,11 @@ h3.described {
     }
 
     .begin {
-        padding-top: 58px;
-        padding-left: 34px;
+        padding-top: 61px;
+        padding-left: 4px;
         font-size: 55px;
-        width: 100pw;
+        line-height: 102%;
+        width: 100vw;
     }
     
     .br-begin-course-start {
@@ -2284,8 +2294,8 @@ h3.described {
         display: block;
         position: relative;
         bottom: 20px;
-        margin-left: 34px;
-        margin-top: 0px;
+        margin-left: 7px;
+        margin-top: 6px;
         font-size: 12px;
         line-height: 101.38%;
 
@@ -2294,8 +2304,8 @@ h3.described {
     .rub {
         display: block;
         position: relative;
-        bottom: 10px;
-        right: 60px;
+        bottom: 3px;
+        right: 61px;
         margin-left: 0px;
         margin-top: 5px;
         font-size: 37px;
@@ -2306,14 +2316,14 @@ h3.described {
         display: flex;
         flex-direction: row;
         position: relative;
-        top: -18px;
-        left: 35px;
+        top: -14px;
+        left: 8px;
     }
 
     .text-n1left {
         display: flex;
         flex-direction: column;
-        width: 155px; 
+        width: 156px; 
     }
 
     .text-n1left h6 {
@@ -2321,14 +2331,14 @@ h3.described {
         line-height: 101.38%;
         font-style: normal;
         font-weight: normal;
-        margin-bottom: 15px;
+        margin-bottom: 12px;
     }
 
     .text-n2right {
         display: flex;
         flex-direction: column;
         position: relative;
-        left: 5px;
+        left: 8px;
         padding-left: 10px;
     }
 
@@ -2337,7 +2347,7 @@ h3.described {
         line-height: 101.38%;
         font-style: normal;
         font-weight: normal;
-        margin-bottom: 15px;
+        margin-bottom: 12px;
     }
 
     .text-n1 {
